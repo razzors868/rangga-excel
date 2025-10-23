@@ -5,16 +5,13 @@ import time
 from pathlib import Path
 
 st.set_page_config(layout="wide")
+
 hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden !important; height: 0 !important;}
-    footer {visibility: hidden !important; height: 0 !important;}
-    header {visibility: hidden !important; height: 0 !important;}
-    .stApp {
-        padding-top: 0px !important;
-    }
-    </style>
-    """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 from talking_duration_dashboard import talking_duration_dashboard
