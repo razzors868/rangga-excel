@@ -4,7 +4,14 @@ import pandas as pd
 import time
 from pathlib import Path
 
-st.set_page_config(layout="wide", initial_sidebar_state="collapsed", menu="off")
+st.set_page_config(layout="wide")
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 from talking_duration_dashboard import talking_duration_dashboard
 from sms_dashboard import sms_dashboard
