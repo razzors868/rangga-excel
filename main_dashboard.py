@@ -4,7 +4,7 @@ import pandas as pd
 import time
 from pathlib import Path
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", initial_sidebar_state="collapsed", menu="off")
 
 from talking_duration_dashboard import talking_duration_dashboard
 from sms_dashboard import sms_dashboard
