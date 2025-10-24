@@ -8,7 +8,6 @@ st.set_page_config(layout="wide")
 
 hide_streamlit_style = """
             <style>
-            [data-testid="stToolbar"] {visibility: hidden !important;}
             footer {visibility: hidden !important;}
             </style>
             """
